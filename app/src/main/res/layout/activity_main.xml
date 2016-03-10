@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/new_divider_color">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/e5e5e5">
+        <ImageView android:layout_marginLeft="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@mipmap/asset_title_bar_back_normal"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="18sp"
+            android:text="我的订单"
+            android:textColor="@android:color/black"
+            android:gravity="center"/>
+    </RelativeLayout>
+
+
+    <FrameLayout android:id="@+id/main_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.umbra.sample.widget.UmbraPullListView
+            android:layout_width="match_parent"
+            android:id="@+id/listview"
+            android:divider="#e5e5e5"
+            android:dividerHeight="10dp"
+            android:layout_height="match_parent">
+            <!--android:layout_above="@id/distribution_add" -->
+        </com.umbra.sample.widget.UmbraPullListView>
+    </FrameLayout>
+
+</LinearLayout>
